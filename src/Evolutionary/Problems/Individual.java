@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package problems;
+package Evolutionary.Problems;
 
 import Binary.Problem;
 import java.lang.reflect.Constructor;
@@ -47,6 +47,12 @@ public abstract class Individual<G> implements Comparable<Individual<G>>, Clonea
      * @return fitness
      */
     protected abstract double fitnessFunction();
+    
+    /**
+     * initialize the individual
+     * eventaly in the random way
+     */
+    public abstract void initialize();
 
     /**
      * Create a new individuals

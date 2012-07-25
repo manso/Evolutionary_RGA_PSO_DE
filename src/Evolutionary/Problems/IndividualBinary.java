@@ -2,24 +2,34 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package problems;
+package Evolutionary.Problems;
 
 import java.lang.reflect.Constructor;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import problems.Individual;
+import Evolutionary.Problems.Individual;
 
 /**
  *
  * @author ZULU
  */
 public abstract class IndividualBinary extends Individual<Boolean> {
-
+    //number of genes
+    private int size ;
+    
     public IndividualBinary(int n, boolean optimization) {
         super(optimization);
-        for (int i = 0; i < n; i++) {
+        this.size = n;
+        initialize();
+        
+    }
+    
+    public void initialize(){
+        chromossom.clear();
+        for (int i = 0; i < size; i++) {
             chromossom.add(rnd.nextBoolean());            
         }
+        isEvaluated = false;
         evaluate();
     }
     

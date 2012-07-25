@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package problems;
+package Evolutionary.Problems;
 
-import problems.IndividualBinary;
+import Evolutionary.Problems.IndividualBinary;
 
 /**
  *

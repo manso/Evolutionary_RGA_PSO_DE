@@ -4,7 +4,7 @@
  */
 package Binary;
 
-import problems.MaxOnes;
+import Evolutionary.Problems.MaxOnes;
 
 /**
  *
