@@ -102,13 +102,6 @@ public abstract class Problem implements Comparable<Problem> {
             tmp.functionValue = functionValue;
             return tmp;
 
-
-
-
-
-
-
-
         } catch (Exception ex) {
             Logger.getLogger(Problem.class
                     .getName()).log(Level.SEVERE, null, ex);
