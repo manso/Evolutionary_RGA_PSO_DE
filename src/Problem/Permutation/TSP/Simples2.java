@@ -1,7 +1,3 @@
-
-import Problem.RealCoded.F3D;
-import Algorithms.PSO;
-
 ///****************************************************************************/
 ///****************************************************************************/
 ///****     Copyright (C) 2012                                             ****/
@@ -19,17 +15,19 @@ import Algorithms.PSO;
 ///****                                                                    ****/
 ///****************************************************************************/
 ///****************************************************************************/
+package Problem.Permutation.TSP;
+
 /**
  *
  * @author ZULU
  */
-public class testPSO {
+public class Simples2 extends TSP {
 
-    public static void main(String[] args) {
-        PSO pso = new PSO();
-//  System.out.println("Solution:" + pso.solve(1000, 50, new F1()));
-//        System.out.println("Solution:" + pso.solve(100, 50, new F2()));
-        System.out.println("Solution:" + pso.solve(1000, 200, new F3D()));
+    static int[] optimum = {0, 1, 2, 3, 4};
+    static double[] x = {0, 1, 3, 3, 2};
+    static double[] y = {2, 1, 1, 2, 4};
 
+    public Simples2() {
+        super(x, y, optimum);
     }
 }

@@ -4,8 +4,8 @@
  */
 package Algorithms;
 
-import RealCoded.Problem;
-import RealCoded.Particle;
+import Problem.RealCoded.Problem;
+import Problem.RealCoded.Particle;
 import java.util.ArrayList;
 
 /**

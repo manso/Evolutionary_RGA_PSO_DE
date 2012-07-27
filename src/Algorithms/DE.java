@@ -17,7 +17,7 @@
 ///****************************************************************************/
 package Algorithms;
 
-import RealCoded.Problem;
+import Problem.RealCoded.Problem;
 import java.util.ArrayList;
 import java.util.Random;
 

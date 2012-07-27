@@ -17,7 +17,7 @@
 ///****************************************************************************/
 package Permutation.TSP.Crossover;
 
-import Permutation.TSP.Simples2;
+import Problem.Permutation.TSP.Simples2;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;

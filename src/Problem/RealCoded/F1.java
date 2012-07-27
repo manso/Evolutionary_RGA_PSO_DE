@@ -1,7 +1,3 @@
-
-import Problem.RealCoded.F3D;
-import Algorithms.PSO;
-
 ///****************************************************************************/
 ///****************************************************************************/
 ///****     Copyright (C) 2012                                             ****/
@@ -19,17 +15,28 @@ import Algorithms.PSO;
 ///****                                                                    ****/
 ///****************************************************************************/
 ///****************************************************************************/
+package Problem.RealCoded;
+
 /**
  *
  * @author ZULU
  */
-public class testPSO {
+public class F1 extends Problem {
 
-    public static void main(String[] args) {
-        PSO pso = new PSO();
-//  System.out.println("Solution:" + pso.solve(1000, 50, new F1()));
-//        System.out.println("Solution:" + pso.solve(100, 50, new F2()));
-        System.out.println("Solution:" + pso.solve(1000, 200, new F3D()));
+    //define domain of Genes
+    static{
+        MIN =-0.5;
+        MAX = 0.5;
+    }
+    
+    public F1() {
+        //one gene
+        super(1);
+    }
 
+    @Override
+    protected double calculateFunction() {
+        // f(x) = - x^2
+        return -value[0] * value[0];
     }
 }

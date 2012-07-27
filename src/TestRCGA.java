@@ -1,7 +1,7 @@
 
-import RealCoded.F1;
-import RealCoded.F2;
-import RealCoded.F3D;
+import Problem.RealCoded.F1;
+import Problem.RealCoded.F2;
+import Problem.RealCoded.F3D;
 import Algorithms.RCGA;
 
 ///****************************************************************************/

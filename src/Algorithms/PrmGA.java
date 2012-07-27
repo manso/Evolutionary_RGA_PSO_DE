@@ -17,9 +17,9 @@
 ///****************************************************************************/
 package Algorithms;
 
-import Permutation.PMX;
-import Permutation.Problem;
-import Permutation.TSP.Ulysses16;
+import Evolutionary.Genetics.Recombination.PMX;
+import Problem.Permutation.Problem;
+import Problem.Permutation.TSP.Ulysses16;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;

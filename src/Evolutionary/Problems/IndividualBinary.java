@@ -8,6 +8,7 @@ import java.lang.reflect.Constructor;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import Evolutionary.Problems.Individual;
+import java.util.ArrayList;
 
 /**
  *
@@ -31,6 +32,13 @@ public abstract class IndividualBinary extends Individual<Boolean> {
         }
         isEvaluated = false;
         evaluate();
+    }
+    
+    public void set(boolean []genes){
+        chromossom = new ArrayList<>();
+        for (int i = 0; i < genes.length; i++) {
+           chromossom.add(genes[i]);            
+        }        
     }
     
     @Override

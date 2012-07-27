@@ -1,10 +1,10 @@
 
 import Algorithms.DE;
-import RealCoded.F3D;
+import Problem.RealCoded.F3D;
 import Algorithms.PSO;
 import Algorithms.RCGA;
-import RealCoded.F4_Rastrigin;
-import RealCoded.Problem;
+import Problem.RealCoded.F4_Rastrigin;
+import Problem.RealCoded.Problem;
 
 /*
  * To change this template, choose Tools | Templates and open the template in

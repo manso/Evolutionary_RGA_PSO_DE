@@ -1,7 +1,3 @@
-
-import Problem.RealCoded.F3D;
-import Algorithms.PSO;
-
 ///****************************************************************************/
 ///****************************************************************************/
 ///****     Copyright (C) 2012                                             ****/
@@ -19,17 +15,22 @@ import Algorithms.PSO;
 ///****                                                                    ****/
 ///****************************************************************************/
 ///****************************************************************************/
+package Problem.Permutation.TSP;
+
 /**
  *
  * @author ZULU
  */
-public class testPSO {
+public class Ulysses16 extends TSP {
 
-    public static void main(String[] args) {
-        PSO pso = new PSO();
-//  System.out.println("Solution:" + pso.solve(1000, 50, new F1()));
-//        System.out.println("Solution:" + pso.solve(100, 50, new F2()));
-        System.out.println("Solution:" + pso.solve(1000, 200, new F3D()));
+    static int[] best = {0, 2, 1, 3, 7, 14, 4, 10, 8, 9, 6, 5, 13, 12, 11, 15};
+    
+    static double[] x = {38.24, 39.57, 40.56, 36.26, 33.48, 37.56, 38.42, 37.52,
+        41.23, 41.17, 36.08, 38.47, 38.15, 37.51, 35.49, 39.36};
+    static double[] y = {20.42, 26.15, 25.32, 23.12, 10.54, 12.19, 13.11, 20.44,
+        9.10, 13.05, -5.21, 15.13, 15.35, 15.17, 14.32, 19.56};
 
+    public Ulysses16() {
+        super(x, y, best);
     }
 }
